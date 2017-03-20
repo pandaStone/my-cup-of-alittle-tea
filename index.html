@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telphone=yes"/>
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" media="screen"/> 
+    <title>一点点拼单小助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+       <img src="img/logo.png" alt="alittle-tea's logo">
+   </header>
+    <div id="order">
+       <!--<button id="english">英文版</button>-->
+       <div class="order-who">
+            
+            <div id="where-div" class="where select">
+                <span id="where-span"class="select-span">我在图书馆</span>
+                <select id="where"  class="select-option" >
+                        <option>我在图书馆</option>
+                        <option>我在教学区</option>
+                        <option>我不在华工南校区</option>
+                        <option>我在C1</option>
+                        <option>我在C2</option>
+                        <option>我在C3</option>
+                        <option>我在C4</option>
+                        <option>我在C5</option>
+                        <option>我在C6</option>            
+                        <option>我在C7</option>
+                        <option>我在C8</option>               
+                        <option>我在C9</option>
+                        <option>我在C10</option>                 
+                        <option>我在C11</option>
+                        <option>我在C12</option>                
+                        <option>我在C13</option>
+                        <option>我在C14</option>                 
+                        <option>我在C15</option>
+                        <option>我在C16</option>
+                        <option>我在B区（学院楼）</option>
+                        <option>我在一饭</option>
+                        <option>我在二饭</option>
+                        
+                </select>                 
+            </div>
+               <div id="other" class="hide">
+                    <input type="text" id="otherplace" placeholder="输入你的地点" >
+               </div>
+
+            <div class="driver select">
+                <span id="driver-span" class="select-span">我要上车</span>
+                <select id="driver" class="select-option" >
+                        <option>我要上车</option>
+                        <option>我要开车</option>
+                </select>
+            </div>
+            
+        </div> 
+        
+        
+        
+        <div class="order-detail">
+                <div class="cut"></div>
+
+                <div class="recommend select2">
+
+                    <a id="hotButton">人气推荐</a><a id="randomButton">随机选择</a>
+                </div>
+                
+                <div id="hotdrink">
+                      <div class="inner">
+                            <div>
+                                <a><img src="img/2.jpg" alt="波霸奶茶"><span>波霸奶茶</span></a>
+                                <a><img src="img/1.jpg" alt="茉莉绿茶"><span>茉莉绿茶</span></a>
+                                <a><img src="img/3.png" alt="红茶拿铁"><span>红茶拿铁</span></a>
+                                 <a><img src="img/4.jpg" alt="四季春茶"><span>四季春茶</span></a>
+                           </div>
+                           <div>
+                                <a><img src="img/5.jpg" alt="珍珠奶茶"><span>珍珠奶茶</span></a>
+                                <a><img src="img/6.jpg" alt="可可芭蕾"><span>可可芭蕾</span></a>
+                                <a><img src="img/7.jpg" alt="乌龙玛奇朵"><span>乌龙玛奇朵</span></a>
+                                <a><img src="img/8.png" alt="乌龙奶茶"><span>乌龙奶茶</span></a>
+                           </div>
+                      </div>
+
+                <div class="cut"></div>
+
+
+
+                </div>
+
+
+                <div class="drink select">
+                        <span id="drink-span" class="select-span">波霸奶茶</span>
+                        <select id="drink" class="select-option" >
+                                <option>波霸奶茶</option>
+                                <option>波霸奶绿</option>
+                                <option>波霸红</option>
+                                <option>波霸绿</option>
+                                <option>珍珠奶茶</option>
+                                <option>珍珠奶绿</option>
+                                <option>珍珠红</option>
+                                <option>珍珠绿</option>
+                                <option>椰果奶茶</option>            
+                                <option>仙草奶冻</option>
+                                <option>布丁奶茶</option>               
+                                <option>红豆QQ奶茶</option>
+                                <option>四季如意</option>                    
+                                <option>燕麦奶茶</option>
+
+                                <option>红茶拿铁</option>
+                                <option>乌龙拿铁</option>            
+                                <option>古早味红茶拿铁</option>
+                                <option>焦糖红茶拿铁</option>               
+                                <option>可可芭蕾拿铁</option>
+
+                                <option>奶茶</option>                    
+                                <option>奶绿</option>
+                                <option>四季奶青</option>                    
+                                <option>乌龙奶茶</option>
+                                <option>焦糖奶茶</option>                    
+                                <option>古早味奶茶</option>
+                                <option>红茶玛奇朵</option>
+                                <option>乌龙玛奇朵</option>       
+                                <option>阿华田</option>
+                                <option>可可芭蕾</option>      
+
+                                <option>茉莉绿茶</option>
+                                <option>阿萨姆红茶</option>               
+                                <option>四季春茶</option>
+                                <option>冻顶乌龙茶</option>                    
+                                <option>翡翠柠檬</option>
+                                <option>梅果绿</option>                    
+                                <option>蜂蜜绿*仅限冷饮*</option>
+                                <option>8冰绿</option>                    
+                                <option>葡萄柚绿</option>
+                                <option>养乐多绿*仅限冷饮*</option>                    
+                                <option>冰淇淋红茶*仅限冷饮*</option>
+                                <option>古早味红茶</option>
+
+                                <option>柠檬汁</option>                    
+                                <option>金桔柠檬</option>
+                                <option>柠檬蜜*仅限冷饮*</option>                    
+                                <option>柠檬梅子</option>
+                                <option>柠檬养乐多*仅限冷饮*</option>                    
+                                <option>蜜茶*仅限冷饮*</option>
+                                <option>8冰茶</option>              
+                            </select>           
+                </div> 
+                <div id="cup" class="select2">
+                   <a class="checked">大杯</a>
+                    <a>中杯</a>
+                </div>
+                <div id="ice" class="select2">
+                    <a class="checked">正常</a>
+                    <a>少冰</a>
+                    <a>去冰</a>
+                    <a>常温</a>
+                    <a>加热</a>
+                </div>
+                <div id="sugar" class="select2">
+                    <a class="checked">十分甜</a>
+                    <a>九分甜</a>
+                    <a>少糖</a>
+                    <a>半糖</a>
+                    <a>微糖</a>
+                    <a>无糖</a>
+                </div>
+               <div id="add" class="select2">
+                   <a>珍珠</a>
+                   <a>波霸</a>
+                   <a>椰果</a>
+                   <a>仙草</a>
+                   <a>红豆</a>
+               </div>
+                <span id="price">￥13</span><a id="addButton">确认添加</a>
+        </div>
+
+        
+        
+        
+        <div class="car">
+           
+            <div class="cut"></div>
+           <span>已点 <span id="num">0</span>&nbsp;杯</span><!--背景右部放上箭头-->
+           <span id="totalprice">￥0</span>
+            <a id="submitButton">去粘贴</a>
+            <div id="car">
+            </div>
+        </div>
+        
+        <div id="contact" class="hide">
+                    <div class="cut"></div>
+                    <p>&nbsp;&nbsp;&nbsp;Gogo新天地店:&nbsp;&nbsp;<a href="tel:31127353">31127353</a></p>
+                    <p>大学城北店(贝岗):&nbsp; <a href="tel:39022967">39022967</a></p>
+                    <input id="how2pay" type="text" placeholder="支付宝收款请为乘客留下账号">
+        </div>
+
+    </div>
+
+    <!--    
+       <footer>
+        author:Stone Tsang
+        email:631493694@qq.com
+        欢迎debug o(*≧▽≦*)o
+        </footer> 
+    -->
+    <script src="script/clipboard.min.js"></script>
+    <script src="script/app.js"></script>
+    
+
+
+</body>
+</html>
