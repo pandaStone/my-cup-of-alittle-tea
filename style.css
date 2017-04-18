@@ -186,3 +186,7 @@ a#submitButton,a#addButton,.recommend a{
     font-size: 3.1vw;
     color: #054010;
 }
+
+#drink-span {
+    font-weight:bolder;
+}
