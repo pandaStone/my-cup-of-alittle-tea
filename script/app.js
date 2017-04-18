@@ -124,7 +124,8 @@
                 if(isDriver && how2pay) {
                     text +="\n【支付宝账号："+how2pay+"】";
                 }
-                text +="\n【一点点拼单小助手↓】\nhttp://521diandian.club";
+                text +="\n—————————————————
+                        \n【一点点拼单小助手↓】\nhttp://521diandian.club";
                 if(orderText.length===0) {
                     alert('(´・ω・`)客官不喝点什么吗');
                     return false;
