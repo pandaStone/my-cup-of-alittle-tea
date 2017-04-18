@@ -1,4 +1,3 @@
-        //select、radio、checkbox组件功能实现
         var where = document.getElementById("where");
         var drink = document.getElementById("drink");
         var driver = document.getElementById("driver");
@@ -125,6 +124,7 @@
                 if(isDriver && how2pay) {
                     text +="\n【支付宝账号："+how2pay+"】";
                 }
+                text +="\n【喝一点点，用拼单小助手↓】\nhttp://521diandian.club";
                 if(orderText.length===0) {
                     alert('(´・ω・`)客官不喝点什么吗');
                     return false;
@@ -328,6 +328,7 @@ function changeSpan(txt) {
     for(var i=0;i<options.length;i++) {
         if(options[i].text==txt) {
             options[i].selected = "true";
+            break;
         }
     }
 }
