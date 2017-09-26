@@ -23,7 +23,7 @@
         var curprice=13;
         var totalprice = 0;
         var hotdrink_display = false;
-
+        var touchLocked = false;  //解决touch和滑动冲突事件
         var price = {
             "波霸奶茶":[10,13],
             "波霸奶绿":[10,13],
@@ -98,9 +98,6 @@
         drink.onchange = function(){    select("drink"); setPrice();}
      
 
-
-        
-
         
         //复制点单信息到粘贴板
         new Clipboard(submitButton, {
@@ -135,6 +132,19 @@
             }
         });
 
+
+        window.addEventListener('touchmove', function(event){
+            locked || (locked = true, window.addEventListener('touchend', stopTouchendPropagation, true));
+        }, true);
+
+
+
+
+function stopTouchendPropagation(event){
+    event.stopPropagation();
+    window.removeEventListener('touchend', stopTouchendPropagation, true);
+    touchLocked = false;
+}
         
 function isPC() {
     var userAgentInfo = navigator.userAgent;
