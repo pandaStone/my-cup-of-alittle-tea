@@ -133,19 +133,20 @@
         });
 
 
-        window.addEventListener('touchmove', function(event){
-            locked || (locked = true, window.addEventListener('touchend', stopTouchendPropagation, true));
-        }, true);
-
+        window.addEventListener('touchmove', function(ev){
+            touchLocked || (touchLocked = true, window.addEventListener('touchend', stopTouchendPropagation, true));
+        }, false);
 
 
 
 function stopTouchendPropagation(event){
     event.stopPropagation();
-    window.removeEventListener('touchend', stopTouchendPropagation, true);
-    touchLocked = false;
+    setTimeout(function(){
+        window.removeEventListener('touchend', stopTouchendPropagation, true);
+        touchLocked = false;
+    }, 50);
 }
-        
+
 function isPC() {
     var userAgentInfo = navigator.userAgent;
     var Agents = ["Android", "iPhone",
